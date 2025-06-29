@@ -9,29 +9,29 @@ const TeacherDashboard = () => {
             <div className="p-4">
                 <div className="flex gap-4">
                     <div className="grid grid-cols-3 grid-rows-2 gap-6 mb-6">
-                        <Link to='/' className="bg-white text-black p-6 rounded-lg shadow flex flex-col justify-center">
+                        <Link to='/dashboard/quizzes' className="bg-white text-black p-6 rounded-lg shadow flex flex-col justify-center">
                             <div className="flex items-center gap-6">
                                 <div className="rounded-full bg-cyan-300/25 p-4">
                                     <FaTasks className="text-xl" />
                                 </div>
                                 <div className="">
-                                    <p className='text-3xl font-bold'>10</p>
+                                    <p className='text-3xl font-bold'>4</p>
                                     <p>Total Quizzes</p>
                                 </div>
                             </div>
                         </Link>
-                        <Link to='/' className="bg-white text-black p-6 rounded-lg shadow flex flex-col justify-center">
+                        <Link to='/dashboard/materials' className="bg-white text-black p-6 rounded-lg shadow flex flex-col justify-center">
                             <div className="flex items-center gap-6">
                                 <div className="rounded-full bg-purple-300/50 p-4">
                                     <FaTasks className="text-xl" />
                                 </div>
                                 <div className="">
-                                    <p className='text-3xl font-bold'>10</p>
+                                    <p className='text-3xl font-bold'>3</p>
                                     <p>Total Materials</p>
                                 </div>
                             </div>
                         </Link>
-                        <Link to='/' className="bg-white text-black p-6 rounded-lg shadow flex flex-col justify-center">
+                        <Link className="bg-white text-black p-6 rounded-lg shadow flex flex-col justify-center">
                             <div className="flex items-center gap-6">
                                 <div className="rounded-full bg-indigo-300/50 p-4">
                                     <FaGraduationCap className="text-xl" />
