@@ -68,23 +68,27 @@ const StudentDashbaord = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="bg-white text-black p-6 rounded-lg shadow justify-between w-80">
+                    <div className="bg-white text-black p-6 rounded-lg shadow justify-between w-full">
                         <div className="flex justify-between items-center mb-2">
                             <h3 className="font-semibold">Student</h3>
                         </div>
                         <div className="">
-                            <table className="text-sm text-left">
+                            <table className="text-sm text-left w-full">
                                 <thead>
                                     <tr className="text-gray-600 border-b">
                                         <th>Name</th>
+                                        <th>Subject</th>
+                                        <th>Class</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr className="border-b">
                                         <td className="py-2 flex items-center gap-2">
                                             <img src={`https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png`} className="w-6 h-6 rounded-full" />
-                                            Riyan Hakim M
+                                            Teacher Example
                                         </td>
+                                        <td>English</td>
+                                        <td>Science-A, Science-B</td>
                                     </tr>
 
                                 </tbody>

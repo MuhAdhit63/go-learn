@@ -14,8 +14,8 @@ const DashboardLayout = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      <header>
-        <nav className="bg-gray-800 border-gray-200 px-4 lg:px-6 py-2.5">
+      <header className=''>
+        <nav className="bg-gray-800 border-gray-200 px-4 lg:px-6 py-2.5 fixed w-full">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="#" className="flex items-center">
               <img src="/logo.png" className="mr-3 h-6 sm:h-9" alt="Logo" />
@@ -30,21 +30,21 @@ const DashboardLayout = () => {
             <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
               <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                 <li>
-                  {/* Link ini akan mengarah ke halaman utama dashboard */}
-                  <Link to="/dashboard" className="block py-2 pr-4 pl-3 text-white rounded lg:bg-transparent lg:p-0" end>Home</Link>
+                  <Link to="/dashboard" className="block py-2 pr-4 pl-3 text-gray-400 hover:text-white lg:p-0" end>Home</Link>
                 </li>
                 <li>
-                  {/* Link ini akan mengarah ke halaman materi di dalam layout */}
                   <Link to="/dashboard/materials" className="block py-2 pr-4 pl-3 text-gray-400 hover:text-white lg:p-0">Materials</Link>
                 </li>
-                {/* Tambahkan link navigasi lainnya di sini */}
+                <li>
+                  <Link to="/dashboard/quizzes" className="block py-2 pr-4 pl-3 text-gray-400 hover:text-white lg:p-0">Quiz</Link>
+                </li>
               </ul>
             </div>
           </div>
         </nav>
       </header>
 
-      <main>
+      <main className='pt-16'>
         {/* Di sinilah konten (Dashboard, MaterialsPage, dll) akan dirender */}
         <Outlet />
       </main>
