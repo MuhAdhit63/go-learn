@@ -104,7 +104,7 @@ const QuizListPage = () => {
                                     ) : (
                                         <div className="flex gap-2">
                                             {studentAttempt ? (
-                                                <Link to={`/dashboard/quizzes/results/${studentAttempt.id + 1}`} className="text-sm bg-indigo-500 text-white px-3 py-1 rounded">
+                                                <Link to={`/dashboard/quizzes/results/${studentAttempt.id}`} className="text-sm bg-indigo-500 text-white px-3 py-1 rounded">
                                                     Result
                                                 </Link>
                                             ) : (
